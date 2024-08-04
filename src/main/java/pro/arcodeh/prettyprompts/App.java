@@ -14,11 +14,11 @@ public class App
     {
         Prompter prompter = PrompterFactory.createPrompter();
 
-        boolean isHorny = prompter.promptBooleanAnswer(
-                "Are you horny?",
+        boolean isHungry = prompter.promptBooleanAnswer(
+                "Are you hungry?",
                 ""
         );
-        System.out.println(isHorny);
+        System.out.println(isHungry);
 
     }
 }
