@@ -3,8 +3,18 @@ package pro.arcodeh.prettyprompts.prompter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class in charge of drawing questions and options to the screen
+ */
 public class Graphics {
 
+    /**
+     * Function to draw prettified question and options to terminal
+     * @param title the question {@link String}
+     * @param options the possible answers {@link String[]}
+     * @param info further information/instructions {@link String}
+     * @param labelType the kind of labelling to use for the options {@link LabelType}
+     */
     public void draw(String title, String[] options, String info, LabelType labelType) {
         int width = StringUtilities.longest(List.of(options, new String[]{title}, new String[]{info}));
 
