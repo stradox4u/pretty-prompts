@@ -14,18 +14,11 @@ public class App
     {
         Prompter prompter = PrompterFactory.createPrompter();
 
-//        boolean isHorny = prompter.promptBooleanAnswer(
-//                "Are you horny?",
-//                ""
-//        );
-//        System.out.println(isHorny);
-
-        char limit = prompter.promptCharAnswer(
-                "Would you creampie a prostitute?",
-                new String[] {"y", "n"},
-                "",
-                LabelType.ALPHABETIC
+        boolean isHorny = prompter.promptBooleanAnswer(
+                "Are you horny?",
+                ""
         );
-        System.out.println(limit);
+        System.out.println(isHorny);
+
     }
 }
