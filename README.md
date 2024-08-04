@@ -1,8 +1,9 @@
 # Pretty Prompter
 
 > The base type is `Prompter`, and you can get an instance of this using the `PrompterFactory` like so:
-> ```java Prompter prompter = PrompterFactory.createPrompter();```
-> 
+```java 
+  Prompter prompter = PrompterFactory.createPrompter();
+```
 > This should return you an instance of the prompter, on which you can then call your required methods.
 
 ## Methods
@@ -26,7 +27,7 @@ The type is imported from this library's package, and has three possible values:
 Each method returns a value of the type as depicted above.
 
 ## Example Usage
-> ```java
+```java
     Prompter prompter = PrompterFactory.createPrompter();
 
     String range = prompter.promptStringAnswer(
@@ -47,5 +48,4 @@ Each method returns a value of the type as depicted above.
         "Are you of legal age?",
         "Type y/n"
     );
-> 
 ```
