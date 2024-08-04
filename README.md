@@ -27,25 +27,28 @@ The type is imported from this library's package, and has three possible values:
 Each method returns a value of the type as depicted above.
 
 ## Example Usage
+
 ```java
-    Prompter prompter = PrompterFactory.createPrompter();
+import pro.arcodeh.prettyprompts.prompter.LabelType;
 
-    String range = prompter.promptStringAnswer(
-        "How old are you?",
-        new String[] {"15 - 21", "22 - 35", "36 - 50", "Above 50"},
-        "Type the relevant number from the list"
-        LabelType.NUMERIC
-    );
+Prompter prompter = PrompterFactory.createPrompter();
 
-    int age = prompter.promptNumericAnswer("How old are you?");
+String range = prompter.promptStringAnswer(
+        "What is your favorite day of the week?",
+        "Type an abbreviation for your favorite day"
+);
 
-    boolean delete = prompter.promptBooleanAnswer(
+int age = prompter.promptNumericAnswer("How old are you?");
+
+boolean delete = prompter.promptBooleanAnswer(
         "Are you sure you want to delete?",
         "Type yes/no"
-    );
+);
 
-    char consent = prompter.promptCharAnswer(
-        "Are you of legal age?",
-        "Type y/n"
-    );
+char generation = prompter.promptCharAnswer(
+        "What generation would you say you're from?",
+        new String[]{"Boomers", "Gen-X", "Millenials", "Gen-Z"},
+        "Type the correct option",
+        LabelType.ALPHABETIC
+);
 ```
