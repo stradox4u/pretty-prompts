@@ -6,12 +6,12 @@
 
   <groupId>pro.arcodeh.prettyprompts</groupId>
   <artifactId>prettyprompts</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
 
 
   <name>prettyprompts</name>
   <description>This project is a library for collecting user input in the terminal, prettifying your prompts.</description>
-  <url>https://arcodeh.pro</url>
+  <url>https://github.com/stradox4u/pretty-prompts</url>
   <licenses>
     <license>
       <name>The MIT License</name>
